@@ -4,13 +4,17 @@
 <meta charset="utf-8">
 <title>Dynamic Learning - redirecting...</title>
 <script>
-  var target = "https://accountability-older-dramatic-motherboard.trycloudflare.com";
+  // GitHub Pages serves this project site under /dls-link/ - strip that
+  // prefix before forwarding, so /dls-link/update/<token> correctly
+  // becomes <tunnel>/update/<token>, not <tunnel>/dls-link/update/<token>
+  // (which 404s - the real app has no /dls-link prefix in its routes).
+  var target = "https://necessity-yield-prepaid-drives.trycloudflare.com";
   var path = location.pathname.replace(/^\/dls-link/, "");
   location.replace(target + path + location.search);
 </script>
-<meta http-equiv="refresh" content="0; url=https://accountability-older-dramatic-motherboard.trycloudflare.com">
+<meta http-equiv="refresh" content="0; url=https://necessity-yield-prepaid-drives.trycloudflare.com">
 </head>
 <body>
-<p>Redirecting to the Dynamic Learning dashboard... if nothing happens, <a href="https://accountability-older-dramatic-motherboard.trycloudflare.com">click here</a>.</p>
+<p>Redirecting to the Dynamic Learning dashboard... if nothing happens, <a href="https://necessity-yield-prepaid-drives.trycloudflare.com">click here</a>.</p>
 </body>
 </html>
